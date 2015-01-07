@@ -1,5 +1,5 @@
 .transparent {
-  background:rgba(126, 126, 126, 0.5)
+  background:rgba(27, 27, 27, 0.81);
 }
 
 .index-prompt {
@@ -26,6 +26,10 @@
   color: #71FF00;
 }
 
+.fail-link:hover {
+  color: #FFFFFF;
+}
+
 .failed {
   color: #FF7676;
 }
@@ -46,12 +50,20 @@
   margin-bottom: 14em;
 }
 
-.res-row {
+.res-box {
   margin-top: 3em;
 }
 
-.tan-background {
-  background-color: #F0DEC4;
+.trash {
+  color: #FFD500;
+}
+
+.trash:hover {
+  color: #FFFFFF;
+}
+
+.subtle-background {
+  background-color: rgba(113, 255, 0, 0.02);
 }
 
 .name {
