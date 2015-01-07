@@ -18,6 +18,18 @@
   color: #AFEA58;
 }
 
+.resolutions-title {
+  color: #AFEA58;
+}
+
+.on-track {
+  color: #71FF00;
+}
+
+.failed {
+  color: #FF7676;
+}
+
 .body-image {
   height: 100vh;
   }
@@ -32,6 +44,14 @@
 .resolution-controls {
   margin-top: 6.5em;
   margin-bottom: 14em;
+}
+
+.res-row {
+  margin-top: 3em;
+}
+
+.tan-background {
+  background-color: #F0DEC4;
 }
 
 .name {

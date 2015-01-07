@@ -22,6 +22,7 @@ end
 get '/:user_id/resolutions' do
   @user = User.find(params[:user_id])
   @resolutions = Resolution.where(user_id: params[:user_id])
+  @failed_res = Resolution.where(user_id: params[:user_id], failed: true)
   if @resolutions && current_user == @user
     erb :'resolution/all'
   else

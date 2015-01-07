@@ -1,3 +1,26 @@
-<% @resolutions.each do |resolution| %>
-  <%= resolution.title %><br>
-<% end %>
+<div class="medium-10 medium-centered columns transparent">
+  <div class="row res-row">
+    <div class="medium-10 columns">
+      <h2 class="resolutions-title">On Track:</h2>
+      <ul class="no-bullet">
+        <% @resolutions.each do |resolution| %>
+          <li><h4 class="on-track"><%= resolution.title %></h4></li>
+        <% end %>
+      </ul>
+      <h2 class="resolutions-title">Failed:</h2>
+      <% if @failed %>
+        <ul class="no-bullet">
+          <% @failed.each do |resolution| %>
+            <li><h4 class="failed"><%= resolution.title %></h4></li>
+          <% end %>
+        </ul>
+      <% else %>
+        <h4 class="on-track">Nothing! Keep up the good work!</h4>
+      <% end %>
+    </div>
+    <div class="medium-2 columns">
+
+    </div>
+  </div>
+</div>
+
