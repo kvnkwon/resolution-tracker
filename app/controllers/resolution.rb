@@ -29,3 +29,10 @@ get '/:user_id/resolutions' do
     redirect('/')
   end
 end
+
+# Delete a resolution
+delete '/resolution/:id' do
+  resolution = Resolution.find(params[:id])
+  resolution.destroy
+  redirect("/#{current_user.id}/resolutions")
+end

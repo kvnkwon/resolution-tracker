@@ -24,6 +24,7 @@
 
 .on-track {
   color: #71FF00;
+  margin-top: 5.5px;
 }
 
 .fail-link:hover {
@@ -37,6 +38,17 @@
 .body-image {
   height: 100vh;
   }
+
+.link-button {
+  background: none;
+  border: none;
+  display: inline-block;
+  margin-bottom: 0px !important;
+}
+
+.fail-button {
+  float: right;
+}
 
 .left-nav-section {
   height: 100%;
@@ -60,6 +72,11 @@
 
 .trash:hover {
   color: #FFFFFF;
+}
+
+.trash-form {
+  display: inline-block;
+  float: right;
 }
 
 .subtle-background {
