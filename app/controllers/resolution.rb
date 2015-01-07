@@ -17,3 +17,13 @@ post '/resolution/new' do
     redirect('/resolution/new')
   end
 end
+
+# View all resolutions for a user
+get '/:user_id/resolutions' do
+  @resolutions = Resolution.where(user_id: params[:user_id])
+  if @resolutions
+    erb :'resolution/all'
+  else
+    redirect('/')
+  end
+end
