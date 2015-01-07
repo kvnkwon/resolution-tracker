@@ -1,16 +1,60 @@
-.test-header {
-  height: 100vh;
-  width: 100%;
-}
-
-
-.test-under {
-  height: 30vh;
-  width: 100%;
-  text-align: center;
-  background-color: rgb(55, 55, 55);
-}
-
 .transparent {
   background:rgba(126, 126, 126, 0.5)
+}
+
+.index-prompt {
+  margin-top: 20%;
+}
+
+.index-prompt a {
+  color: #AFEA58;
+}
+
+.index-prompt a:hover {
+  color: #D7FAF6;
+}
+
+.index-welcome {
+  color: #AFEA58;
+}
+
+.body-image {
+  height: 100vh;
+  }
+
+.left-nav-section {
+  height: 100%;
+  background-color: #183337;
+  left: 0;
+  float: left;
+  }
+
+.resolution-controls {
+  margin-top: 6.5em;
+  margin-bottom: 14em;
+}
+
+.name {
+  margin-top: 2em !important;
+}
+
+.name a {
+  color: #D7FAF6 !important;
+}
+
+.auth-nav {
+}
+
+.logo-text {
+}
+
+.nav-links {
+}
+
+.nav-links a {
+  color: #D7FAF6 !important;
+}
+
+h1, h2, h3, h4, h5, a {
+  font-family: 'Roboto Condensed', sans-serif;
 }

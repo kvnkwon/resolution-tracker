@@ -1,0 +1,22 @@
+<div class="medium-2 columns left-nav-section">
+  <ul class="side-nav">
+    <li class="name">
+      <h4 class="text-center logo-text"><a href="/"><i class="fa fa-line-chart fa-2x"></i><br>Resolution Tracker</a></h4>
+    </li>
+    <% if current_user %>
+      <div class="resolution-controls">
+        <li class="text-center"><h4 class="nav-links"><a href="/<%= current_user.id %>/resolutions"><i class="fa  fa-child fa-2x"></i><br>My Resolutions</a><h4></li>
+        <br>
+        <li class="text-center"><h4 class="nav-links"><a href="/resolution/new"><i class="fa fa-plus-square fa-2x"></i><br>Add Resolution</a><h4></li>
+      </div>
+    <% end %>
+    <div class="auth-nav">
+      <% if current_user %>
+        <li class="text-center"><h4 class="nav-links"><a href="/logout">Logout</a><h4></li>
+      <% else %>
+        <li class="text-center"><h4 class="nav-links"><a href="/login">Login</a><h4></li>
+        <li class="text-center"><h4 class="nav-links"><a href="/signup">Signup</a><h4></li>
+      <% end %>
+    </div>
+  </ul>
+</div>

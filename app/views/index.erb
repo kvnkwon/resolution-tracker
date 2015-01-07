@@ -1,0 +1,9 @@
+<div class="medium-8 medium-centered columns index-prompt">
+  <% if current_user %>
+    <h1 class="index-welcome text-center">Welcome <%= current_user.full_name %></h1>
+    <h3 class="index-resolutions text-center"><a href="/<%= current_user.id %>/resolutions">View your resolutions</a></h3>
+  <% else %>
+    <h1 class="index-signup text-center"><a href="/signup">Sign up to get started!</a></h1>
+    <h3 class="index-login text-center"><a href="/login">Already a user?</a></h3>
+  <% end %>
+</div>

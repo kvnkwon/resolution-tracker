@@ -20,8 +20,9 @@ end
 
 # View all resolutions for a user
 get '/:user_id/resolutions' do
+  @user = User.find(params[:user_id])
   @resolutions = Resolution.where(user_id: params[:user_id])
-  if @resolutions
+  if @resolutions && current_user == @user
     erb :'resolution/all'
   else
     redirect('/')

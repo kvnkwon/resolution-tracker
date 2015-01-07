@@ -7,7 +7,7 @@ post '/signup' do
   user = User.new(params[:user])
   if user.save
     session[:user_id] = user.id
-    redirect("/")
+    redirect("/#{user.id}/resolutions")
   else
     session[:error] = user.errors.messages
     redirect("/signup")
@@ -24,7 +24,7 @@ post '/login' do
   # Try can be used on a nil object, so it won't lead to the no method error page.
   if user
     session[:user_id] = user.id
-    redirect("/")
+    redirect("/#{user.id}/resolutions")
   else
     set_error("Username not found or password is incorrect.")
     redirect("/login")
