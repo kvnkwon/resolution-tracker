@@ -42,19 +42,33 @@
   color: #D7FAF6 !important;
 }
 
-.auth-nav {
+.error-prompt {
+  color: #FF7676;
 }
 
-.logo-text {
-}
-
-.nav-links {
+.error-prompt a {
+  color: #D7FAF6;
 }
 
 .nav-links a {
   color: #D7FAF6 !important;
 }
 
-h1, h2, h3, h4, h5, a {
+h1, h2, h3, h4, h5, a{
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+form, p {
+  font-family: 'PT Sans', sans-serif;
+}
+
+@media screen and (max-height: 700px) {
+  .resolution-controls {
+    margin-top: 2em;
+    margin-bottom: 4em;
+  }
+
+  .name {
+    margin-top: 2em !important;
+  }
 }

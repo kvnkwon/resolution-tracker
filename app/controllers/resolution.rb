@@ -11,7 +11,7 @@ post '/resolution/new' do
   user_resolution = Resolution.create(params[:resolution])
   user_resolution.update(user_id: current_user.id)
   if user_resolution.save
-    redirect("/")
+    redirect("/#{current_user.id}/resolutions")
   else
     session[:error] = user_resolution.errors.messages
     redirect('/resolution/new')

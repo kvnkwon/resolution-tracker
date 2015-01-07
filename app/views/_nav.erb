@@ -7,7 +7,7 @@
       <div class="resolution-controls">
         <li class="text-center"><h4 class="nav-links"><a href="/<%= current_user.id %>/resolutions"><i class="fa  fa-child fa-2x"></i><br>My Resolutions</a><h4></li>
         <br>
-        <li class="text-center"><h4 class="nav-links"><a href="/resolution/new"><i class="fa fa-plus-square fa-2x"></i><br>Add Resolution</a><h4></li>
+        <li class="text-center"><h4 class="nav-links"><a href="/resolution/new" class="modal-reveal"><i class="fa fa-plus-square fa-2x"></i><br>Add Resolution</a><h4></li>
       </div>
     <% end %>
     <div class="auth-nav">
@@ -19,4 +19,14 @@
       <% end %>
     </div>
   </ul>
+</div>
+
+<div id="res-modal" class="reveal-modal large" data-reveal>
+  <%= display_error %>
+  <form action='/resolution/new' method="POST">
+    Resolution:<br>
+    <input type="text" name="resolution[title]" placeholder="Remember! Keep your resolutions realistic for better success!"><br>
+    <input type="submit" class="button success" value="Add">
+  </form>
+  <a class="close-reveal-modal">&#215;</a>
 </div>
