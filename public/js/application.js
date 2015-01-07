@@ -1,5 +1,5 @@
 $(document).ready(function () {
 
-  // $(".test-header").backstretch("http://www.hdwallwide.com/wp-content/uploads/2014/07/daft-punk-music-electronics-hd-wallpaper-1080p.jpg");
+  $("body").backstretch("https://unsplash.imgix.net/photo-1419064642531-e575728395f2?q=75&fm=jpg&s=490dffe2e11f468947891ab40651e176");
 
 });
