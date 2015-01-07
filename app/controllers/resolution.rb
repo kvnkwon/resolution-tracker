@@ -21,13 +21,20 @@ end
 # View all resolutions for a user
 get '/:user_id/resolutions' do
   @user = User.find(params[:user_id])
-  @resolutions = Resolution.where(user_id: params[:user_id])
+  @resolutions = Resolution.where(user_id: params[:user_id], failed: false)
   @failed_res = Resolution.where(user_id: params[:user_id], failed: true)
   if @resolutions && current_user == @user
     erb :'resolution/all'
   else
     redirect('/')
   end
+end
+
+# User can fail a help request
+put '/resolution/:id/fail' do
+  resolution = Resolution.find(params[:id])
+  resolution.update(failed: true)
+  erb :_failed, layout: false
 end
 
 # Delete a resolution

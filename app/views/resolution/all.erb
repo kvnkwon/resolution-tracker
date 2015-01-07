@@ -10,17 +10,20 @@
           <input type="hidden" name="_method" value="DELETE">
           <button type="submit" class="link-button"><i class="fa fa-trash fa-lg trash"></i></button>
         </form>
-        <a href="#" class="button link-button fail-button"><i class="fail-link failed fa fa-frown-o fa-lg"></i></a>
+        <form action='/resolution/<%= resolution.id %>/fail' class="failed-form" method="POST">
+          <input type="hidden" name="_method" value="PUT">
+          <button type="submit" class="link-button"><i class="fail-link failed fa fa-frown-o fa-lg"></i></button>
+        </form>
       </div>
     </div>
   <% end %>
 
   <h2 class="resolutions-title">Failed:</h2>
-  <% if @failed %>
-    <% @failed.each_with_index do |resolution, index| %>
+  <% if @failed_res %>
+    <% @failed_res.each_with_index do |resolution, index| %>
       <div class="row <%= "subtle-background" if index % 2 == 1 %>">
         <div class="medium-8 columns">
-          <h4 class="on-track"><%= resolution.title %></h4>
+          <h4 class="failed-title"><%= resolution.title %></h4>
         </div>
         <div class="medium-4 columns">
           <form action='/resolution/<%= resolution.id %>' class="trash-form" method="POST">

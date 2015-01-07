@@ -17,4 +17,17 @@ $(document).ready(function() {
     $('#res-modal').foundation('reveal', 'open');
     $('#res-modal').foundation('reveal', 'close');
   });
+
+  $('.res-box').on('submit', '.failed-form', function(event) {
+    event.preventDefault();
+    var $target = $(event.target);
+    $.ajax({
+      type: "PUT",
+      url: $target.attr("action")
+    }).done(function(response) {
+      $target.parent().empty().append(response);
+    });
+
+
+  });
 });

@@ -35,9 +35,14 @@
   color: #FF7676;
 }
 
+.failed-title {
+  color: #FF7676;
+  margin-top: 5.5px;
+}
+
 .body-image {
   height: 100vh;
-  }
+}
 
 .link-button {
   background: none;
@@ -64,6 +69,8 @@
 
 .res-box {
   margin-top: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .trash {
@@ -76,6 +83,16 @@
 
 .trash-form {
   display: inline-block;
+  float: right;
+}
+
+.failed-form {
+  display: inline-block;
+  float: right;
+}
+
+.failed-response {
+  margin-top: 5.5px;
   float: right;
 }
 
