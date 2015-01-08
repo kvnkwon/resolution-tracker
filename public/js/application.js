@@ -29,7 +29,17 @@ $(document).ready(function() {
     }).done(function(response) {
       $target.parent().empty().append(response);
     });
+  });
 
-
+  $('.res-box').on('submit', '.revive-form', function(event) {
+    event.preventDefault();
+    var $target = $(event.target);
+    $.ajax({
+      type: "PUT",
+      url: $target.attr("action")
+    }).done(function(response) {
+      console.log(response)
+      $target.parent().empty().append(response);
+    });
   });
 });

@@ -35,7 +35,7 @@
   margin-top: 5.5px;
 }
 
-.fail-link:hover {
+.res-action-link:hover {
   color: #FFFFFF;
 }
 
@@ -46,6 +46,10 @@
 .failed-title {
   color: #FF7676;
   margin-top: 5.5px;
+}
+
+.revive {
+  color: #71FF00;
 }
 
 .body-image {
@@ -87,6 +91,11 @@
 
 .trash:hover {
   color: #FFFFFF;
+}
+
+.revive-form {
+  display: inline-block;
+  float: right;
 }
 
 .trash-form {
