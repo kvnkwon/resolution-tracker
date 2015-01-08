@@ -20,11 +20,11 @@ $(document).ready(function() {
     $('#res-modal').foundation('reveal', 'close');
   });
 
-  $('.res-box').on('submit', '.failed-form', function(event) {
+  $('.res-box').on('submit', '.control-form', function(event) {
     event.preventDefault();
     var $target = $(event.target);
     $.ajax({
-      type: "PUT",
+      type: $target.children().first().attr("value"),
       url: $target.attr("action")
     }).done(function(response) {
       var $row = $target.parent().parent();
@@ -35,18 +35,4 @@ $(document).ready(function() {
     });
   });
 
-  $('.res-box').on('submit', '.revive-form', function(event) {
-    event.preventDefault();
-    var $target = $(event.target);
-    $.ajax({
-      type: "PUT",
-      url: $target.attr("action")
-    }).done(function(response) {
-      var $row = $target.parent().parent()
-      $target.parent().empty().append(response);
-      setTimeout(function() {
-        $row.fadeOut("slow");
-      }, 1500);
-    });
-  });
 });

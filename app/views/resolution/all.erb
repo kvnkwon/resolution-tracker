@@ -6,11 +6,11 @@
         <h4 class="on-track"><%= resolution.title %></h4>
       </div>
       <div class="medium-4 columns">
-        <form action='/resolution/<%= resolution.id %>' class="trash-form" method="POST">
+        <form action='/resolution/<%= resolution.id %>' class="control-form" method="POST">
           <input type="hidden" name="_method" value="DELETE">
           <button type="submit" class="link-button"><i class="fa fa-trash fa-lg trash"></i></button>
         </form>
-        <form action='/resolution/<%= resolution.id %>/fail' class="failed-form" method="POST">
+        <form action='/resolution/<%= resolution.id %>/fail' class="control-form" method="POST">
           <input type="hidden" name="_method" value="PUT">
           <button type="submit" class="link-button"><i class="res-action-link failed fa fa-frown-o fa-lg"></i></button>
         </form>

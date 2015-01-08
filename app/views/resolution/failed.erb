@@ -7,11 +7,11 @@
           <h4 class="failed-title"><%= resolution.title %></h4>
         </div>
         <div class="medium-4 columns">
-          <form action='/resolution/<%= resolution.id %>' class="trash-form" method="POST">
+          <form action='/resolution/<%= resolution.id %>' class="control-form" method="POST">
             <input type="hidden" name="_method" value="DELETE">
             <button type="submit" class="link-button"><i class="fa fa-trash fa-lg trash"></i></button>
           </form>
-          <form action='/resolution/<%= resolution.id %>/revive' class="revive-form" method="POST">
+          <form action='/resolution/<%= resolution.id %>/revive' class="control-form" method="POST">
             <input type="hidden" name="_method" value="PUT">
             <button type="submit" class="link-button"><i class="revive res-action-link fa fa-medkit fa-lg"></i></button>
           </form>

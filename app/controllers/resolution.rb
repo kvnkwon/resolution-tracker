@@ -48,7 +48,7 @@ put '/resolution/:id/fail' do
   erb :_failed, layout: false
 end
 
-# User can revive a  failed help request
+# User can revive a failed help request
 put '/resolution/:id/revive' do
   resolution = Resolution.find(params[:id])
   resolution.update(failed: false)
@@ -60,5 +60,5 @@ end
 delete '/resolution/:id' do
   resolution = Resolution.find(params[:id])
   resolution.destroy
-  redirect("/#{current_user.id}/resolutions")
+  erb :_trash, layout: false
 end

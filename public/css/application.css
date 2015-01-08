@@ -93,6 +93,11 @@
   color: #FFFFFF;
 }
 
+.control-form {
+  display: inline-block;
+  float: right;
+}
+
 .revive-form {
   display: inline-block;
   float: right;
