@@ -2,6 +2,10 @@
   background:rgba(27, 27, 27, 0.81);
 }
 
+.logo-text a {
+  color: #AFEA58 !important;
+}
+
 .index-prompt {
   margin-top: 20%;
 }
@@ -102,10 +106,6 @@
 
 .name {
   margin-top: 2em !important;
-}
-
-.name a {
-  color: #D7FAF6 !important;
 }
 
 .error-prompt {
