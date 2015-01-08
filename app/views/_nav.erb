@@ -5,9 +5,9 @@
     </li>
     <% if current_user %>
       <div class="resolution-controls">
-        <li class="text-center"><h4 class="nav-links"><a href="/<%= current_user.id %>/resolutions"><i class="fa  fa-child fa-2x"></i><br>My Resolutions</a><h4></li>
-        <br>
         <li class="text-center"><h4 class="nav-links"><a href="/resolution/new" class="modal-reveal"><i class="fa fa-plus-square fa-2x"></i><br>Add Resolution</a><h4></li>
+        <li class="text-center"><h4 class="nav-links"><a href="/<%= current_user.id %>/resolutions"><i class="fa  fa-child fa-2x"></i><br>My Resolutions</a><h4></li>
+        <li class="text-center"><h4 class="nav-links"><a href="/<%= current_user.id %>/grave"><i class="fa fa-tree fa-2x"></i><br>The Graveyard</a><h4></li>
       </div>
     <% end %>
     <div class="auth-nav">

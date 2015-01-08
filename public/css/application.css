@@ -6,6 +6,10 @@
   color: #AFEA58 !important;
 }
 
+.nav-links {
+  line-height: 150%;
+}
+
 .index-prompt {
   margin-top: 20%;
 }
@@ -139,12 +143,12 @@ form, p {
 
 @media screen and (max-height: 700px) {
   .resolution-controls {
-    margin-top: 2em;
-    margin-bottom: 4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   .name {
-    margin-top: 2em !important;
+    margin-top: 1em !important;
   }
 
   .auth-form {

@@ -30,6 +30,17 @@ get '/:user_id/resolutions' do
   end
 end
 
+# View all failed resolutions for a user
+get '/:user_id/grave' do
+  @user = User.find(params[:user_id])
+  @failed_res = Resolution.where(user_id: params[:user_id], failed: true)
+  if @failed_res && current_user == @user
+    erb :'resolution/failed'
+  else
+    redirect('/')
+  end
+end
+
 # User can fail a help request
 put '/resolution/:id/fail' do
   resolution = Resolution.find(params[:id])
