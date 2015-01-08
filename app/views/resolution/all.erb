@@ -1,6 +1,6 @@
 <div class="medium-10 medium-centered columns res-box transparent">
   <h2 class="resolutions-title">On Track:</h2>
-  <% @resolutions.each_with_index do |resolution, index| %>
+  <% @resolutions.reverse.each_with_index do |resolution, index| %>
     <div class="row <%= "subtle-background" if index % 2 == 1 %>">
       <div class="medium-8 columns">
         <h4 class="on-track"><%= resolution.title %></h4>

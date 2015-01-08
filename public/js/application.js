@@ -6,6 +6,8 @@ $(document).ready(function() {
     fontRatio: 30
   });
 
+  $('.res-box').niceScroll();
+
   $(".body-image").backstretch("https://ununsplash.imgix.net/34/BA1yLjNnQCI1yisIZGEi_2013-07-16_1922_IMG_9873.jpg?q=75&fm=jpg&s=8fac76943fb13ba5f0078d33e4eddd6a");
   $('.index-signup').addClass('animated fadeInDown');
   $('.index-login').addClass('animated fadeInUp');
@@ -34,5 +36,6 @@ $(document).ready(function() {
       }, 1500);
     });
   });
+
 
 });
