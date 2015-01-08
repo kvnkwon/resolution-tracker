@@ -120,7 +120,7 @@
   color: #D7FAF6 !important;
 }
 
-h1, h2, h3, h4, h5, a{
+h1, h2, h3, h4, h5, a, span {
   font-family: 'Roboto Condensed', sans-serif;
 }
 

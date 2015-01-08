@@ -11,6 +11,7 @@ $(document).ready(function() {
   $('.index-login').addClass('animated fadeInUp');
   $('.index-welcome').addClass('animated fadeInDown');
   $('.index-resolutions').addClass('animated fadeInUp');
+  $('.res-box').addClass('animated fadeIn');
 
   $('.modal-reveal').on('click', function(event) {
     event.preventDefault();
