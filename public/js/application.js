@@ -27,7 +27,7 @@ $(document).ready(function() {
       type: "PUT",
       url: $target.attr("action")
     }).done(function(response) {
-      var $row = $target.parent().parent()
+      var $row = $target.parent().parent();
       $target.parent().empty().append(response);
       setTimeout(function() {
         $row.fadeOut("slow");
@@ -42,7 +42,11 @@ $(document).ready(function() {
       type: "PUT",
       url: $target.attr("action")
     }).done(function(response) {
+      var $row = $target.parent().parent()
       $target.parent().empty().append(response);
+      setTimeout(function() {
+        $row.fadeOut("slow");
+      }, 1500);
     });
   });
 });
