@@ -1,8 +1,18 @@
-<%= display_error %>
-<form action='/login' method="POST">
-  Username:<br>
-  <input type="text" name="user[name]"><br>
-  Password:<br>
-  <input type="password" name="user[password]"><br>
-  <input type="submit" value="Login">
-</form>
+<div class="medium-5 medium-centered columns auth-form transparent">
+  <%= display_error %>
+  <form action='/login' method="POST">
+    <div class="row">
+      <div class="medium-12 medium-centered columns">
+        <span class="form-label">Username:</span><br>
+        <input type="text" name="user[name]">
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-12 medium-centered columns">
+        <span class="form-label">Password:</span><br>
+        <input type="password" name="user[password]">
+        <input type="submit" value="Login" class="button success expand">
+      </div>
+    </div>
+  </form>
+</div>

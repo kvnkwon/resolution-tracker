@@ -104,6 +104,15 @@
   background-color: rgba(113, 255, 0, 0.02);
 }
 
+.auth-form {
+  margin-top: 5em;
+  padding: 1em;
+}
+
+.form-label {
+  color: #D7FAF6;
+}
+
 .name {
   margin-top: 2em !important;
 }
@@ -137,4 +146,10 @@ form, p {
   .name {
     margin-top: 2em !important;
   }
+
+  .auth-form {
+    margin-top: 1.5em;
+    padding: 1em;
+  }
+
 }

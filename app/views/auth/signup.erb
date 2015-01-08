@@ -1,12 +1,30 @@
-<%= display_error %>
-<form action='/signup' method="POST">
-  Username:<br>
-  <input type="text" name="user[name]"><br>
-  Full name:<br>
-  <input type="text" name="user[full_name]"><br>
-  Password:<br>
-  <input type="password" name="user[password]"><br>
-  Password Confirmation:<br>
-  <input type="password" name="user[password_confirmation]"><br>
-  <input type="submit" value="Signup">
-</form>
+<div class="medium-5 medium-centered columns auth-form transparent">
+  <%= display_error %>
+  <form action='/signup' method="POST">
+    <div class="row">
+      <div class="medium-12 medium-centered columns">
+        <span class="form-label">Username:</span><br>
+        <input type="text" name="user[name]">
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-12 medium-centered columns">
+        <span class="form-label">Full name:</span><br>
+        <input type="text" name="user[full_name]">
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-12 medium-centered columns">
+        <span class="form-label">Password:</span><br>
+        <input type="password" name="user[password]">
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-12 medium-centered columns">
+        <span class="form-label">Password Confirmation:</span><br>
+        <input type="password" name="user[password_confirmation]">
+        <input type="submit" value="Signup" class="button success expand">
+      </div>
+    </div>
+  </form>
+</div>
