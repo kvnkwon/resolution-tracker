@@ -1,5 +1,5 @@
 <div class="medium-10 medium-centered columns res-box transparent">
-  <h2 class="resolutions-title">Your failed resolutions:</h2>
+  <h2 class="resolutions-title text-center">Your failed resolutions:</h2>
   <% if !@failed_res.empty? %>
     <% @failed_res.reverse.each_with_index do |resolution, index| %>
       <div class="row <%= "subtle-background" if index % 2 == 1 %>">
